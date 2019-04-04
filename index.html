@@ -11,22 +11,24 @@
         .progress-bar-striped-desni {
             background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
             background-size: 1rem 1rem;
-        }
+        } /*izmenjen default ugao sa 45 na 135deg*/
 
         .progress-bar-animated-reverse {
             -webkit-animation: progress-bar-stripes 1s linear infinite;
             animation: progress-bar-stripes 1s linear infinite reverse;
-        }
+        } /*dodat reverse za desni stripe bar*/
     </style>
 </head>
 
 <body class="bg-dark">
     <div class="row">
         <div class="progress col-md-1" style="height: 1000px">
-            <div class="progress-bar progress-bar-striped bg-info progress-bar-animated d-none d-sm-block" style="width:100%"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated d-none d-sm-block"
+                style="width:100%; background-color: chocolate"></div>
         </div>
         <div class="progress col-md-1 offset-md-10" style="height: 1000px">
-            <div class="progress-bar progress-bar-striped-desni bg-info progress-bar-animated-reverse d-none d-sm-block" style="width:100%"></div>
+            <div class="progress-bar progress-bar-striped-desni progress-bar-animated-reverse d-none d-sm-block"
+                style="width:100%; background-color: chocolate"></div>
         </div>
     </div>
 
