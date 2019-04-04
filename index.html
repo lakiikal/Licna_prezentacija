@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>O meni</title>
     <style>
         .progress-bar-striped-desni {
@@ -23,12 +23,18 @@
             animation: progress-bar-stripes 1s linear infinite reverse;
         }
 
-        .navbar {
-            width: 83% !important;
-            margin: 0px auto;
-            left: 0;
-            right: 0;
-            
+        @media screen and (min-width: 0px) and (max-width:768px) {
+            .navbar {
+                width: 100%;
+                margin: auto;
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+            .navbar {
+                width: 83%;
+                margin: auto;
+            }
         }
     </style>
 </head>
@@ -39,35 +45,36 @@
             <div class="progress-bar progress-bar-striped progress-bar-animated d-none d-sm-block"
                 style="width:100%; background-color: chocolate"></div>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 col-12">
             <nav class="navbar bg-dark navbar-expand-md navbar-dark fixed-top">
                 <!-- logo kompanije cesto stoji na pocetku (ovde cesto stoji i slika umesto teksta) -->
                 <a class="navbar-brand" href="#">
                     <img src="logo.png" alt="" style="width: 120px">
                 </a>
-            
+
                 <!-- za male ekrane se automatski kreira kolapsirajuci navbar -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseid">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            
+
                 <!-- ovo treba dodati oko navbar-nav dela da bi navbar bio kolapsirajuci. id treba da se poklapa sa id kod data-target -->
                 <div class="collapse navbar-collapse" id="collapseid">
-            
+
                     <!-- u sklopu ove liste se dodaju linkovi navbara -->
                     <ul class="navbar-nav">
                         <!-- ovako se dodaje svaki link zasebno (kao clan liste) -->
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link 1</a>
                         </li>
-            
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link 2</a>
                         </li>
-            
+
                         <!-- ovako se dodaje dropdown lista -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Linkovi</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                                data-toggle="dropdown">Linkovi</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Link 3</a>
                                 <a class="dropdown-item" href="#">Link 4</a>
@@ -75,7 +82,7 @@
                             </div>
                         </li>
                     </ul>
-                
+
                 </div>
             </nav>
         </div>
