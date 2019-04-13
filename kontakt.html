@@ -44,8 +44,8 @@
     <!--top meni-->
     <div id="header_make-up">
         <nav class="navbar bg-dark navbar-expand-sm navbar-dark fixed-top">
-            <a class="navbar-brand" href="#">
-                <img src="ilpa_cad_logo.png" alt="" style="width: 150px">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/ilpa_cad_logo.png" alt="" style="width: 150px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseid">
                 <span class="navbar-toggler-icon"></span>
@@ -73,7 +73,7 @@
     <div class="row">
         <!--leva strafta-->
         <div id="levi_bar" class="col-md-1 d-none d-md-block">
-            <div class="progress" style="height: 5000px">
+            <div class="progress" style="height: 1700px">
                 <div class="progress-bar progress-bar-striped progress-bar-animated"
                     style="width:100%; background-color: chocolate"></div>
             </div>
@@ -116,63 +116,42 @@
                 </div>
                 <h1 class="text-white border-bottom display-4 pt-5">Recite mi nešto o sebi</h1>
                 <!--kontakt forma-->
-                <form method="" action="" id="f" class="container" novalidate>
+                <form method="" action="" id="f" class="container" novalidate style="margin-bottom:100px">
                     <div class="form-group">
                         <label for="ime_prezime"> Ime i prezime*: </label>
-                        <input id="ime_prezime" type="text" placeholder="Ime Prezime" maxlength="30" name="ime_prezime"
+                        <input id="ime_prezime" type="text" placeholder="Unesite Vaše ime i prezime" maxlength="30" name="ime_prezime"
                             required class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="username"> Korisnicko ime*: </label>
-                        <input id="username" type="text" name="korisnicko_ime" required class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="email"> Email: </label>
-                        <input id="email" name="email" type="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="password"> Sifra*: </label>
-                        <input id="password" name="sifra" required type="password" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="password"> Unesite ponovo sifru*: </label>
-                        <input id="password" name="sifra" required type="password" class="form-control">
-                    </div>
-                    <div class='form-group'>
-                        <label for="ime_prezime"> Ime i prezime*: </label>
-                        <input id="ime_prezime" type="text" placeholder="Pera Peric" maxlength="30" name="ime_prezime"
-                            required class="form-control">
+                        <label for="email"> Email*: </label>
+                        <input id="email" name="email" type="email" placeholder="Unesite Vašu email adresu" required class="form-control">
                     </div>
                     <div class='form-group'>
                         <label for="datum_rodjenja"> Datum rodjenja: </label>
                         <input id="datum_rodjenja" type="date" name="datum_rodjenja" class="form-control">
                     </div>
                     <div class='form-group'>
-                        <label for="email"> Email: </label>
-                        <input id="email" name="email" type="email" class="form-control">
-                    </div>
-                    <div class='form-group'>
                         <label for="veb_adresa"> Veb adresa: </label>
-                        <input id="veb_adresa" name="veb_adresa" autocomplete="off" type="url" class="form-control">
+                        <input id="veb_adresa" name="veb_adresa" autocomplete="off" type="url" placeholder="Unesite link do Vaše veb stranice" class="form-control">
                     </div>
                     <div class='form-group'>
-                        <label for="password"> Sifra*: </label>
-                        <input id="password" name="sifra" required type="password" class="form-control">
+                            <label for="o_sebi"> Opišite sebe: </label>
+                            <textarea class='form-control' name='o_sebi' rows="10" cols="50" placeholder="Napišite ukratko nešto o sebi"></textarea>
+                        </div>
+                    <div class='form-group'>
+                        <label for="citat"> Vaš omiljeni citat: </label>
+                        <textarea class='form-control' name='citat' rows="2" cols="50" placeholder="Navedite vaš omiljeni citat"></textarea>
                     </div>
                     <div class='form-group'>
-                        <label for="citat"> Vas omiljeni citat: </label>
-                        <textarea class='form-control' name='citat' rows="4" cols="50"></textarea>
-                    </div>
-                    <div class='form-group'>
-                        <input value="reset" type="reset" class="btn btn-primary">
-                        <input value="posalji podatke" type="submit" class="btn btn-primary">
+                        <input value="Obriši podatke" type="reset" class="btn btn-danger">
+                        <input value="Posalji podatke" type="submit" class="btn btn-success float-right">
                     </div>
                 </form>
             </div>
         </div>
         <!--desna strafta-->
         <div id="desni_bar" class="col-md-1 d-none d-md-block">
-            <div class="progress" style="height: 5000px">
+            <div class="progress" style="height: 1700px">
                 <div class="progress-bar progress-bar-striped-desni progress-bar-animated-reverse"
                     style="width:100%; background-color: chocolate"></div>
             </div>
