@@ -34,17 +34,18 @@
         }
 
         #footer {
-            height: 55px;
+            height: 80px;
             width: 100%;
         }
     </style>
 </head>
 
 <body style="background-color:gray">
+    <!--top meni-->
     <div id="header_make-up">
         <nav class="navbar bg-dark navbar-expand-sm navbar-dark fixed-top">
             <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="" style="width: 150px">
+                <img src="ilpa_cad_logo.png" alt="" style="width: 150px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseid">
                 <span class="navbar-toggler-icon"></span>
@@ -70,121 +71,388 @@
         </nav>
     </div>
     <div class="row">
-        <div id="levi_bar" class="col-sm-1 d-none d-sm-block">
-            <div class="progress" style="height: 1500px">
+        <!--leva strafta-->
+        <div id="levi_bar" class="col-md-1 d-none d-md-block">
+            <div class="progress" style="height: 5000px">
                 <div class="progress-bar progress-bar-striped progress-bar-animated"
                     style="width:100%; background-color: chocolate"></div>
             </div>
         </div>
-        <div id="sadrzaj" class="col-sm-10">
+        <div id="sadrzaj" class="col-md-10">
             <div class="container">
-                <h1 class="text-white border-bottom display-4">CV - Igor Lakić</h1>
+                <div class="text-white">
+                    <h2 class="pt-4 display-3 border-bottom"> O ovom projektu </h2>
+                    <p style="font-size: large"> Cilj ove veb prezentacije je sumiranje do sada stečenih
+                        znanja iz HTML i CSS tehnologija na kursu IT preobuka u organizaciji UNDP-a i Matematičkog
+                        fakulteta u Beogradu. Predviđeno je da se tokom kursa obrade sledeće oblasti:</p>
+                    <div>
+                        <ul>
+                            <li>
+                                HTML
+                            </li>
+                            <li>
+                                CSS
+                            </li>
+                            <li>
+                                Bootstrap
+                            </li>
+                            <li>
+                                Git tehnologije
+                            </li>
+                            <li>
+                                JavaScript
+                            </li>
+                            <li>
+                                MySQL
+                            </li>
+                            <li>
+                                PHP
+                            </li>
+                        </ul>
+                    </div>
+                    <p> Više o tome na <span> <b> <a class="text-white" href="http://itobuka.matf.bg.ac.rs/">
+                                    itobuka.matf.bg.ac.rs. </a> </b> </span> Kurs je počeo 23.02.2019. godine, a
+                        planirani završetak je sredinom leta 2019. godine</p>
+                </div>
+                <h1 class="text-white border-bottom display-4 pt-5">CV - Igor Lakić</h1>
+                <!--licni podaci-->
                 <h2 class="text-white pt-5 border-bottom">I) LIČNI PODACI</h2>
                 <div class="row">
-                    <div class="col-md-4 col-12 bg-dark" style="height:100px">
-                        Ime i prezime:
-                        Adresa stanovanja:
-                        Kontakt:
-                        Datum i mesto rođenja:
-                        Bračno stanje:
-                        Vojni rok:
+                    <div class="col-md-9 pt-2">
+                        <table class="table table-bordered bg-light table-striped">
+                            <tr>
+                                <td style="width:30%"> Ime i prezime: </td>
+                                <td> Igor Lakić </td>
+                            </tr>
+                            <tr>
+                                <td> Adresa stanovanja: </td>
+                                <td> Bogdana Žerajića 1, 11000 Beograd, Miljakovac </td>
+                            </tr>
+                            <tr>
+                                <td> Kontakt: </td>
+                                <td> telefon (mobilni): +381 64 8022053
+                                    <br>
+                                    telefon (kućni): +381 11 3594810
+                                    <br>
+                                    <a href="mailto:igorlakic79@gmail.com"> e-mail: igorlakic79@gmail.com </td> </a>
+                            </tr>
+                            <tr>
+                                <td> Datum i mesto rođenja: </td>
+                                <td> 28.11.1979. godine, Beograd, Srbija </td>
+                            </tr>
+                            <tr>
+                                <td> Bračno stanje: </td>
+                                <td> oženjen </td>
+                            </tr>
+                            <tr>
+                                <td> Vojni rok: </td>
+                                <td> odslužen </td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="col-md-5 col-12 bg-light" style="height:100px">
-                        Igor Lakić
-                        Bogdana Žerajića 1, 11000 Beograd, Miljakovac
-                        telefon (mobilni): +381 64 8022053, telefon (kućni): +381 11 3594810,
-                        e-mail: igorlakic79@gmail.com
-                        28.11.1979. godine, Beograd, Srbija
-                        oženjen
-                        odslužen
-                    </div>
-                    <div class="col-md-3 col-12 bg-dark" style="height:100px">
-                        <img src="kad_sam_bio_mladjan_momak_ja.png" alt="" style="height: 100%">
+                    <div class="col-md-3 pt-2 text-center">
+                        <img src="kad_sam_bio_mladjan_momak_ja.png" alt="" style="width:100%;">
                     </div>
                 </div>
-
-
-                11000 Beograd, Miljakovac
-                Kontakt: telefon (mobilni): +381 64 8022053
-                telefon (kućni): +381 11 3594810
-                e-mail: igorlakic79@gmail.com
-                Datum i mesto rođenja: 28.11.1979. godine, Beograd, Srbija
-                Bračno stanje: oženjen
-                Vojni rok: odslužen
-
-                <h2 class="text-white pt-5 border-bottom">II) RADNO ISKUSTVO</h2>
-                - 10 godina i 1 mesec
-                1 godina i 9 meseci
-                (april 2017. – decembar 2018.)
-                trenutno zaposlen u Alzziti – otkazni rok Alzzita doo – vođa projekta, pre toga tehnički crtač
-                • Projektovanje tehnologije kuhinje (AutoCAD) u skladu sa HACCP standardima
-                • Izrada plana ViK, elektro i plinskih instalacija za ugostiteljske objekte u skladu sa zahtevima
-                predložene
-                opreme
-                • Davanje ponuda za izradu i montažu ugostiteljske opreme od inox-a iz proizvodnog programa Alzzite i
-                Electrolux professional,
-                • Komunikacija sa klijentima kako na terenu tako i preko telefona i u kancelariji
-                • Snimanje postojećeg stanja i postojećih instalacija, kao i uzimanje mera na objektu
-                • Izrada potrebne tehničke dokumentacije za proizvodnju inox opreme u AutoCAD-u i kroz slobodoručne
-                skice,
-                • Svakodnevna komunikacija sa proizvodnim pogonom i kontrola kvaliteta izvedene opreme
-                • Nabavka i prijem repromaterijala,
-                • Izrada ponuda, faktura i otpremnica, radnih naloga i trebovanja u robno-knjigovodstvenom programu
-                Calculus
-                1 godina i 11 meseci
-                (mart 2015. – januar 2017.) Limar doo – tehnička priprema fajlova za CNC mašinu i operater na CNC
-                mašini:
-                • Izrada tehničkih crteža u AutoCAD-u prema donetom uzorku
-                • Izrada tehničkih crteža u IGEMSU (CAD-CAM sofver za pripremu CNC programa)
-                • Davanje ponuda za izradu delova na water jet mašini,
-                • Izrada CNC programa (softver IGEMS) za sečenje na water jet mašini,
-                • Kao operater na water jet mašinama (WJ 3015 sa Fanuc upravljačkom konzolom i WJ 2010 sa Mach 3
-                softverom),
-                • Nabavka i prijem materijala, isporuka gotovih komada,
-                • Izrada faktura u programu Biznis Soft
-                5 meseci
-                (septembar 2014. – januar 2014.) U privatnoj stolarskoj radionici rad na montaži kuhinja, plakara i
-                drugog
-                nameštaja po meri od univera i medijapana. Izrada 3d modela kuhinja, plakara... u programu 3dsMAX.
-                1 godina i 6 meseci
-                (mart 2013. – avgust 2014.) Vitorog promet doo – monter pločastog nameštaja i vozač:
-                • Montaža nameštaja od pločastog materijala,
-                • Isporuka tapaciranog i nameštaja od pločastog materijala,
-                • Rešavanje reklamacija, kako u kancelariji tako i na terenu.
-                4 godine i 6 meseci
-                (mај 2007. – oktobar 2011.) JP „Srbijašume“ – Šumskom gazdinstvu „Beograd“:
-                • Izrada i sprovođenja programa upravljanja zaštićenim područjima „Avala“ i „Miljakovačka šuma“
-                • Pejzažno uređenje Teniskog Centra Novak
-                • Pejzažno uređenje studijskog kompleksa RTV Pink u Šimanovcima
-                • Pejzažno uređenje bašte studentskog odmarališta Radojka Lakić na Avali
-                (Praksa u rasadnicima u Topčideru, Sremčici i na Avali)
-                (Odrađen jednogodišnji pripravnjički staž u JP „Srbijašume“ - Šumskom gazdinstvu „Beograd“)
-
+                <h2 class="text-white pt-5 border-bottom">II) RADNO ISKUSTVO - 10 godina i 4 meseca</h2>
+                <div class="row">
+                    <!--mtt-->
+                    <div class="col-md-3 text-center pt-2">
+                        <a href="http://www.mttconsultants.com/mtt-srb"> <img src="mTT_logo.png" alt=""
+                                style="width:100%;"> </a>
+                    </div>
+                    <div class="col-md-9 pt-2">
+                        <table class="table table-bordered bg-light table-striped">
+                            <tr>
+                                <td class="align-middle" rowspan="4" style="width:30%"> mTT-SRB CONSULTANCY d.o.o
+                                    <br>3 meseca
+                                    <br>(januar 2019. – trenutno zaposlen) </td>
+                            </tr>
+                            <tr>
+                                <td> Tehnički crtač u AutoCAD-u </td>
+                            </tr>
+                            <tr>
+                                <td> Izrada tehničkih crteža (na usklađenim arhitektonskim osnovama) sa svim potrebnim
+                                    instalacijama: ViK, elektro i mašinske - u skladu sa grafičkim standardima mTT</td>
+                            </tr>
+                            <tr>
+                                <td> Saradnja sa ostalim članovima tima na većim projektima</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <h1 class="border-bottom"></h1>
+                <!--alzzita-->
+                <div class="row">
+                    <div class="col-md-3 text-center pt-2">
+                        <a href="http://www.alzzita.rs"> <img src="alzzita_logo.png" alt="" style="width:100%;"></a>
+                    </div>
+                    <div class="col-md-9 pt-2">
+                        <table class="table table-bordered bg-light table-striped">
+                            <tr>
+                                <td class="align-middle" rowspan="11" style="width:30%"> Alzzita d.o.o
+                                    <br>1 godina i 9 meseci
+                                    <br>(april 2017. – decembar 2018.) </td>
+                            </tr>
+                            <tr>
+                                <td> Vođa projekta, pre toga tehnički crtač </td>
+                            </tr>
+                            <tr>
+                                <td> Projektovanje tehnologije kuhinje (AutoCAD) u skladu sa HACCP standardima </td>
+                            </tr>
+                            <tr>
+                                <td> Izrada plana ViK, elektro i plinskih instalacija za ugostiteljske objekte u skladu
+                                    sa zahtevima predložene opreme </td>
+                            </tr>
+                            <tr>
+                                <td> Davanje ponuda za izradu i montažu ugostiteljske opreme od inox-a iz proizvodnog
+                                    programa Alzzite i Electrolux professional </td>
+                            </tr>
+                            <tr>
+                                <td> Komunikacija sa klijentima kako na terenu tako i preko telefona i u kancelariji
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> Snimanje postojećeg stanja i postojećih instalacija, kao i uzimanje mera na objektu
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> Izrada potrebne tehničke dokumentacije za proizvodnju inox opreme u AutoCAD-u i
+                                    kroz slobodoručne skice </td>
+                            </tr>
+                            <tr>
+                                <td> Svakodnevna komunikacija sa proizvodnim pogonom i kontrola kvaliteta izvedene
+                                    opreme </td>
+                            </tr>
+                            <tr>
+                                <td> Nabavka i prijem repromaterijala </td>
+                            </tr>
+                            <tr>
+                                <td> Izrada ponuda, faktura i otpremnica, radnih naloga i trebovanja u
+                                    robno-knjigovodstvenom programu Calculus </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <h1 class="border-bottom"></h1>
+                <!--waterjet-->
+                <div class="row">
+                    <div class="col-md-3 text-center pt-2">
+                        <a href="http://www.wj.rs"> <img src="waterjet_logo.jpg" alt="" style="width:100%;"></a>
+                    </div>
+                    <div class="col-md-9 pt-2">
+                        <table class="table table-bordered bg-light table-striped">
+                            <tr>
+                                <td class="align-middle" rowspan="9" style="width:30%"> Limar d.o.o
+                                    <br>1 godina i 11 meseci
+                                    <br>(mart 2015. – januar 2017.) </td>
+                            </tr>
+                            <tr>
+                                <td> Tehnička priprema fajlova za CNC mašinu i operater na CNC mašini </td>
+                            </tr>
+                            <tr>
+                                <td> Izrada tehničkih crteža u AutoCAD-u prema donetom uzorku </td>
+                            </tr>
+                            <tr>
+                                <td> Izrada tehničkih crteža u IGEMSU (CAD-CAM sofver za pripremu CNC programa) </td>
+                            </tr>
+                            <tr>
+                                <td> Davanje ponuda za izradu delova na water jet mašini </td>
+                            </tr>
+                            <tr>
+                                <td> Izrada CNC programa (softver IGEMS) za sečenje na water jet mašini
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> Kao operater na water jet mašinama (WJ 3015 sa Fanuc upravljačkom konzolom i WJ
+                                    2010 sa Mach 3 softverom)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> Nabavka i prijem materijala, isporuka gotovih komada </td>
+                            </tr>
+                            <tr>
+                                <td> Izrada faktura u programu Biznis Soft </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <h1 class="border-bottom"></h1>
+                <!--stolarija-->
+                <div class="row">
+                    <div class="col-md-3 text-center pt-2">
+                        <img src="stolarija.jpg" alt="" style="width:100%;">
+                    </div>
+                    <div class="col-md-9 pt-2">
+                        <table class="table table-bordered bg-light table-striped">
+                            <tr>
+                                <td class="align-middle" rowspan="6" style="width:30%"> Limar d.o.o
+                                    <br>5 meseci
+                                    <br> (septembar 2014. – januar 2015.) </td>
+                            </tr>
+                            <tr>
+                                <td> U privatnoj stolarskoj radionici rad na montaži kuhinja, plakara i drugog nameštaja
+                                    po meri od univera i medijapana </td>
+                            </tr>
+                            <tr>
+                                <td> Izrada 3d modela kuhinja, plakara... u programu 3dsMAX </td>
+                            </tr>
+                            <tr>
+                                <td> Izrada tehničkih crtež u programu AutoCAD </td>
+                            </tr>
+                            <tr>
+                                <td> Davanje ponuda za izradu nameštaja po meri </td>
+                            </tr>
+                            <tr>
+                                <td> Svakodnevno rukovanje ručnim alatom </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <h1 class="border-bottom"></h1>
+                <!--vitorog-->
+                <div class="row">
+                    <div class="col-md-3 text-center pt-2">
+                        <a href="http://vitorogpromet.rs/"> <img src="vitorog_logo.jpg" alt="" style="width:100%;"></a>
+                    </div>
+                    <div class="col-md-9 pt-2">
+                        <table class="table table-bordered bg-light table-striped">
+                            <tr>
+                                <td class="align-middle" rowspan="5" style="width:30%"> Vitorog promet d.o.o
+                                    <br>1 godina i 6 meseci
+                                    <br> (mart 2013. – avgust 2014.) </td>
+                            </tr>
+                            <tr>
+                                <td> Monter pločastog nameštaja i vozač </td>
+                            </tr>
+                            <tr>
+                                <td> Isporuka tapaciranog i nameštaja od pločastog materijala </td>
+                            </tr>
+                            <tr>
+                                <td> Rešavanje reklamacija, kako u kancelariji tako i na terenu </td>
+                            </tr>
+                            <tr>
+                                <td> Svakodnevno rukovanje ručnim alatom </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <h1 class="border-bottom"></h1>
+                <!--srbijasume-->
+                <div class="row">
+                    <div class="col-md-3 text-center pt-2">
+                        <a href="http://www.srbijasume.rs/"> <img src="srbijasume_logo.jpg" alt=""
+                                style="width:100%;"></a>
+                    </div>
+                    <div class="col-md-9 pt-2">
+                        <table class="table table-bordered bg-light table-striped">
+                            <tr>
+                                <td class="align-middle" rowspan="7" style="width:30%"> JP „Srbijašume“ – Šumsko
+                                    gazdinstvo "Beograd"
+                                    <br> 4 godine i 6 meseci
+                                    <br> (mај 2007. – oktobar 2011.) </td>
+                            </tr>
+                            <tr>
+                                <td> Izrada i sprovođenja programa upravljanja zaštićenim područjima "Avala" i
+                                    "Miljakovačka šuma" </td>
+                            </tr>
+                            <tr>
+                                <td> Pejzažno uređenje Teniskog Centra Novak </td>
+                            </tr>
+                            <tr>
+                                <td> Pejzažno uređenje studijskog kompleksa RTV Pink u Šimanovcima </td>
+                            </tr>
+                            <tr>
+                                <td> Pejzažno uređenje bašte studentskog odmarališta Radojka Lakić na Avali </td>
+                            </tr>
+                            <tr>
+                                <td> Praksa u rasadnicima u Topčideru, Sremčici i na Avali </td>
+                            </tr>
+                            <tr>
+                                <td> Odrađen jednogodišnji pripravnički staž u JP "Srbijašume" - Šumskom gazdinstvu
+                                    "Beograd" </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
                 <h2 class="text-white pt-5 border-bottom">III) OBRAZOVANJE</h2>
-                Oktobar 1999. – Mart 2007. Univerzitet u Beogradu, Šumarski fakultet, Odsek za pejzažnu arhitekturu
-                Septembar 1994. – Jun 1998. Škola za dizajn, Odsek za industrijski dizajn
-
+                <!--sumarski fakultet-->
+                <div class="row">
+                    <div class="col-md-3 text-center pt-2">
+                        <a href="http://www.sfb.bg.ac.rs/"> <img src="sumarski_fakultet_logo.jpg" alt=""
+                                style="width:100%;"></a>
+                    </div>
+                    <div class="col-md-9 pt-2">
+                        <table class="table table-bordered bg-light table-striped">
+                            <tr>
+                                <td class="align-middle"> Univerzitet u Beogradu, Šumarski fakultet, Odsek za pejzažnu
+                                    arhitekturu
+                                    <br> 7 godina i 6 meseci
+                                    <br> (oktobar 1999. – mart 2007.)
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <h1 class="border-bottom"></h1>
+                <!--srednja-->
+                <div class="row">
+                    <div class="col-md-3 text-center pt-2">
+                        <a href="http://www.skolazadizajn.com/"> <img src="skola_za_dizajn_logo.png" alt=""
+                                style="width:100%;"></a>
+                    </div>
+                    <div class="col-md-9 pt-2">
+                        <table class="table table-bordered bg-light table-striped">
+                            <tr>
+                                <td class="align-middle"> Škola za dizajn, Odsek za industrijski dizajn
+                                    <br> 3 godine i 9 meseci
+                                    <br> (septembar 1994. – jun 1998.)
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!--ostalo-->
                 <h2 class="text-white pt-5 border-bottom">IV) OSTALE SPOSOBNOSTI</h2>
-                Strani jezik: Engleski
-                Vozačka dozvola: «B» kategorija (aktivan vozač 10 godina)
-                Računarski programi: AutoCAD (17 godina),
-                3ds MAX (12 godina sa prekidima),
-                CorelDRAW (12 godina sa prekidima),
-                Word, Excel,
-                Biznis Soft (knjigovodstveni program),
-                Calculus (knjigovodstveni program),
-                IGEMS (CAD/CAM softver za waterjet mašine)
-                Hobi: Stoni tenis; Projektovanje i izrada nameštaja po meri
+                <table class="table table-bordered bg-light table-striped" style="margin-bottom:100px">
+                    <tr>
+                        <td style="width:30%"> Strani jezik: </td>
+                        <td> Engleski </td>
+                    </tr>
+                    <tr>
+                        <td> Vozačka dozvola: </td>
+                        <td> «B» kategorija (aktivan vozač 10 godina) </td>
+                    </tr>
+                    <tr>
+                        <td> Računarski programi: </td>
+                        <td> AutoCAD (17 godina)
+                            <br> 3ds MAX (12 godina sa prekidima)
+                            <br> CorelDRAW (12 godina sa prekidima)
+                            <br> Word, Excel
+                            <br> Biznis Soft (knjigovodstveni program)
+                            <br> Calculus (knjigovodstveni program)
+                            <br> IGEMS (CAD/CAM softver za waterjet mašine
+                    </tr>
+                    <tr>
+                        <td> Hobi: </td>
+                        <td> Stoni tenis
+                            <br> Projektovanje i izrada nameštaja po meri </td>
+                    </tr>
+                </table>
             </div>
         </div>
-        <div id="desni_bar" class="col-sm-1 d-none d-sm-block">
-            <div class="progress" style="height: 1500px">
+        <!--desna strafta-->
+        <div id="desni_bar" class="col-md-1 d-none d-md-block">
+            <div class="progress" style="height: 5000px">
                 <div class="progress-bar progress-bar-striped-desni progress-bar-animated-reverse"
                     style="width:100%; background-color: chocolate"></div>
             </div>
         </div>
     </div>
-    <div id="footer" class="bg-dark fixed-bottom"></div>
+    <!--footer-->
+    <div id="footer" class="bg-dark fixed-bottom text-light text-center p-3">
+        design by: ILPA CAD | kontakt: <a href="mailto:igorlakic79@gmail.com"> e-mail: igorlakic79@gmail.com</a>
+    </div>
 </body>
 
 </html>
