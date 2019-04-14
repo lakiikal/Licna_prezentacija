@@ -38,6 +38,25 @@
             width: 100%;
         }
 
+        img {
+            width: 200px;
+            height: 295px;
+            margin: 10px
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            /* promeniti na nowrap ili wrap-reverse i videti efekat */
+            flex-wrap: wrap;
+        }
+
+        .flex-container>div {
+            /* ovim sam dohvatio sve divove unutar klase flex-container*/
+            width: 220px;
+            height: 365px;
+        }
+
         /* ANIMACIJA SKINUTA SA: https://codepen.io/FlorinPop17/pen/WEBNyx */
         .word {
 
@@ -186,7 +205,7 @@
     <div id="header_make-up">
         <nav class="navbar bg-dark navbar-expand-sm navbar-dark fixed-top">
             <a class="navbar-brand" href="index.html">
-                <img src="images/ilpa_cad_logo.png" alt="" style="width: 150px">
+                <img src="images/ilpa_cad_logo.png" alt="" style="width: 150px; height: 32px;">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseid">
                 <span class="navbar-toggler-icon"></span>
@@ -216,18 +235,142 @@
     <div class="row">
         <!--leva strafta-->
         <div id="levi_bar" class="col-md-1 d-none d-md-block">
-            <div class="progress" style="height: 2000px">
+            <div class="progress" style="height: 3000px">
                 <div class="progress-bar progress-bar-striped progress-bar-animated"
                     style="width:100%; background-color: chocolate"></div>
             </div>
         </div>
         <div id="sadrzaj" class="col-md-10">
-            <div class="container">
+            <div class="container text-white">
                 <h1 class="text-white border-bottom display-4 pt-5 mb-5">Moji omiljeni filmovi</h1>
-                
+                <h5 class="text-justify"> U slobodno vreme najviše volim da odgledam dobar film. Ovo je stranica koju ću
+                    u narednom periodu dopuniti i linkovima i ka drugim filmovima koje mi se sviđaju. Inače svi linkovi
+                    vode ka IMDB stranicama filmova. Sve slike su sa m.media-amazon.com/images/.</h5>
+                <div class="flex-container">
+                    <div class="text-center">
+                        <a href="https://www.imdb.com/title/tt1441912/" target="_blank">
+                            <img class="rounded"
+                                src="https://m.media-amazon.com/images/M/MV5BMTU4MzM4NzkyOF5BMl5BanBnXkFtZTcwMjQwNjMzNg@@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+                                alt="">
+                        </a>
+                        <a class="text-white d-block" href="https://www.imdb.com/title/tt1441912/" target="_blank">
+                            The way (2010)
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.imdb.com/title/tt0102070/" target="_blank">
+                            <img class="rounded"
+                                src="https://m.media-amazon.com/images/M/MV5BNzc3OGExYzYtMGE0NS00YmVlLWEzOWQtNTZiMjkxZWMzYzQ1XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SY1000_CR0,0,681,1000_AL_.jpg"
+                                alt="">
+                        </a>
+                        <a class="text-white d-block" href="https://www.imdb.com/title/tt0102070/" target="_blank">
+                            Hudson Hawk (1991)
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.imdb.com/title/tt0879870/" target="_blank">
+                            <img class="rounded"
+                                src="https://m.media-amazon.com/images/M/MV5BMTY5NDkyNzkyM15BMl5BanBnXkFtZTcwNDQyNDk0Mw@@._V1_.jpg"
+                                alt="">
+                        </a>
+                        <a class="text-white d-block" href="https://www.imdb.com/title/tt0879870/" target="_blank">
+                            Eat Pray Love (2010)
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.imdb.com/title/tt0089218/" target="_blank">
+                            <img class="rounded"
+                                src="https://m.media-amazon.com/images/M/MV5BNGViMjJjNTUtY2IzNi00YzcyLWFjODUtMjc0NTI3YWNhNjgzXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_CR0,0,662,1000_AL_.jpg"
+                                alt="">
+                        </a>
+                        <a class="text-white d-block" href="https://www.imdb.com/title/tt0089218/" target="_blank">
+                            The Goonies (1985)
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.imdb.com/title/tt0075860/" target="_blank">
+                            <img class="rounded"
+                                src="https://m.media-amazon.com/images/M/MV5BMjM1NjE5NjQxN15BMl5BanBnXkFtZTgwMjYzMzQxMDE@._V1_.jpg"
+                                alt="">
+                        </a>
+                        <a class="text-white d-block" href="https://www.imdb.com/title/tt0075860/" target="_blank">
+                            Close Encounters of the Third Kind (1977)
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.imdb.com/title/tt0095250/" target="_blank">
+                            <img class="rounded"
+                                src="https://m.media-amazon.com/images/M/MV5BOTg5NGE1MjYtZjU3Zi00NWZhLTg4ZmEtMDI0YzMwN2Y2NDIxXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
+                                alt="">
+                        </a>
+                        <a class="text-white d-block" href="https://www.imdb.com/title/tt0095250/" target="_blank">
+                            The Big Blue (1988)
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.imdb.com/title/tt0047396/" target="_blank">
+                            <img class="rounded"
+                                src="https://m.media-amazon.com/images/M/MV5BNGUxYWM3M2MtMGM3Mi00ZmRiLWE0NGQtZjE5ODI2OTJhNTU0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,683,1000_AL_.jpg"
+                                alt="">
+                        </a>
+                        <a class="text-white d-block" href="https://www.imdb.com/title/tt0047396/" target="_blank">
+                            Rear Window (1954)
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.imdb.com/title/tt0110570/" target="_blank">
+                            <img class="rounded"
+                                src="https://m.media-amazon.com/images/M/MV5BYzcwY2VhNjgtOGIzNS00ZDk5LWJiY2MtNTljMTdiN2RhNTJhXkEyXkFqcGdeQXVyMzIzNDU1NTY@._V1_SY1000_CR0,0,741,1000_AL_.jpg"
+                                alt="">
+                        </a>
+                        <a class="text-white d-block" href="https://www.imdb.com/title/tt0110570/" target="_blank">
+                            Il mostro (1994)
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.imdb.com/title/tt0103030/" target="_blank">
+                            <img class="rounded"
+                                src="https://m.media-amazon.com/images/M/MV5BZGQ3NzFkZGEtYzNmNS00MjYzLWI2NjUtNzBmOTVkMGUxMjdlXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_.jpg"
+                                alt="">
+                        </a>
+                        <a class="text-white d-block" href="https://www.imdb.com/title/tt0103030/" target="_blank">
+                            Tacones lejanos (1991)
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.imdb.com/title/tt0071360/" target="_blank">
+                            <img class="rounded"
+                                src="https://m.media-amazon.com/images/M/MV5BYTQxYWJlYTgtMTk5MS00ZGFiLWI5MWItYjhkNjM3YmUyNjYxXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg"
+                                alt="">
+                        </a>
+                        <a class="text-white d-block" href="https://www.imdb.com/title/tt0071360/" target="_blank">
+                            The Conversation (1974)
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.imdb.com/title/tt0079238/" target="_blank">
+                            <img class="rounded"
+                                src="https://m.media-amazon.com/images/M/MV5BNGU5YTgyY2YtMzViMC00MGE4LWI5YmYtMWUxYzgzOWU4YjI1XkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_.jpg"
+                                alt="">
+                        </a>
+                        <a class="text-white d-block" href="https://www.imdb.com/title/tt0079238/" target="_blank">
+                            The Great Riviera Bank Robbery (1979)
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.imdb.com/title/tt0118548/" target="_blank">
+                            <img class="rounded"
+                                src="https://m.media-amazon.com/images/M/MV5BNDFlNTZmOGYtYmE0ZC00OTE4LWI5YzctNmZmZDU3M2ZiMmI4XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SY1000_SX680_AL_.jpg"
+                                alt="">
+                        </a>
+                        <a class="text-white d-block" href="https://www.imdb.com/title/tt0118548/" target="_blank">
+                            Absolute Power (1997)
+                        </a>
+                    </div>
+                </div>
             </div>
             <!--animacija-->
-            <h3 class="text-center text-white pt-5" style="margin-top:200px">Kliknite na slova</h3>
+            <h3 class="text-center text-white pt-5" style="margin-top:350px">Kliknite na slova</h3>
             <div id="div_anim" style="margin-bottom:100px" class="word text-white font-boulder">
                 <span>I</span>
                 <span>T</span>
@@ -258,7 +401,7 @@
         </div>
         <!--desna strafta-->
         <div id="desni_bar" class="col-md-1 d-none d-md-block">
-            <div class="progress" style="height: 2000px">
+            <div class="progress" style="height: 3000px">
                 <div class="progress-bar progress-bar-striped-desni progress-bar-animated-reverse"
                     style="width:100%; background-color: chocolate"></div>
             </div>
