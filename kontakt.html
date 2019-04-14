@@ -194,7 +194,10 @@
             <div class="collapse navbar-collapse" id="collapseid">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">O meni</a>
+                        <a class="nav-link" href="index.html">Početna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o_meni.html">O meni</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="kontakt.html">Kontakt forma</a>
@@ -202,9 +205,8 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projekti</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Veb programiranje</a>
-                            <a class="dropdown-item" href="#">CSS animacije</a>
-                            <a class="dropdown-item" href="#">3D rendering</a>
+                            <a class="dropdown-item" href="3d_rendering.html">3D rendering</a>
+                            <a class="dropdown-item" href="filmovi.html">Omiljeni filmovi</a>
                         </div>
                     </li>
                 </ul>
@@ -214,7 +216,7 @@
     <div class="row">
         <!--leva strafta-->
         <div id="levi_bar" class="col-md-1 d-none d-md-block">
-            <div class="progress" style="height: 1700px">
+            <div class="progress" style="height: 2000px">
                 <div class="progress-bar progress-bar-striped progress-bar-animated"
                     style="width:100%; background-color: chocolate"></div>
             </div>
@@ -224,7 +226,7 @@
                 <h1 class="text-white border-bottom display-4 pt-5">Recite mi nešto o sebi</h1>
                 <!--kontakt forma-->
                 <form method="" action="" id="f" class="container text-white" novalidate>
-                    <div class="form-group ">
+                    <div class="form-group">
                         <label for="ime_prezime"> Ime i prezime*: </label>
                         <input id="ime_prezime" type="text" placeholder="Unesite Vaše ime i prezime" maxlength="30"
                             name="ime_prezime" required class="form-control">
@@ -243,9 +245,14 @@
                                 <div class="input-group-text">@</div>
                             </div>
                             <label class="sr-only" for="domain"></label>
-                            <input type="text" class="form-control" id="domain" placeholder="domain"
-                                style="width:300px">
+                            <input type="text" class="form-control" id="domain" placeholder="domain">
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefon"> Broj Vašeg telefona: </label>
+                        <input id="telefon" type="text" placeholder="Unesite broj Vašeg telefona" maxlength="30"
+                            name="telefon" class="form-control">
+                        <!--kontrolu unosa cifara cemo obaviti preko JavaScripta-->
                     </div>
                     <div class='form-group'>
                         <label for="datum_rodjenja"> Datum rodjenja: </label>
@@ -257,7 +264,7 @@
                             placeholder="Unesite link do Vaše veb stranice" class="form-control">
                     </div>
                     <a href="#collapse1" class="btn btn-warning mb-3" data-toggle="collapse">Prikaži pitanje za
-                        kviska</a>
+                        kviska!</a>
                     <div id="collapse1" class="form-group collapse">
                         <label for="pionir"> Da li ste bili pionir? </label>
                         <div class="form-check">
@@ -293,7 +300,9 @@
                             <option value="neither"> Nijedan od ponuđenih </option>
                         </select>
                     </div>
-                    <label> Da li je neki od navedenih filmova i Vama omiljen? </label>
+                    <label> Da li su neki od navedenih filmova i Vama omiljeni?
+                        <br>(možete da ispratite link i da se vratite nazad - ostaće selektovano ono što ste štiklirali)
+                    </label>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="The_way" id="The_way" value="The_way">
                         <label class="form-check-label" for="The_way">
@@ -325,8 +334,70 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="Close_Encounters" id="Close_Encounters"
                             value="Close_Encounters">
-                        <label class="form-check-label pb-4" for="Close_Encounters">
-                            <a class="text-white" href="https://www.imdb.com/title/tt0075860/"> Close Encounters of the Third Kind (1977) </a>
+                        <label class="form-check-label" for="Close_Encounters">
+                            <a class="text-white" href="https://www.imdb.com/title/tt0075860/"> Close Encounters of the
+                                Third Kind (1977) </a>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Big_Blue" id="Big_Blue" value="Big_Blue">
+                        <label class="form-check-label" for="Big_Blue">
+                            <a class="text-white" href="https://www.imdb.com/title/tt0095250/"> The Big Blue (1988) </a>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Rear_Window" id="Rear_Window"
+                            value="Rear_Window">
+                        <label class="form-check-label" for="Rear_Window">
+                            <a class="text-white" href="https://www.imdb.com/title/tt0047396/"> Rear Window (1954) </a>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="mostro" id="mostro" value="mostro">
+                        <label class="form-check-label" for="mostro">
+                            <a class="text-white" href="https://www.imdb.com/title/tt0110570/"> Il mostro (1994)
+                            </a>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Tacones" id="Tacones" value="Tacones">
+                        <label class="form-check-label" for="Tacones">
+                            <a class="text-white" href="https://www.imdb.com/title/tt0103030/"> Tacones lejanos (1991)
+                            </a>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Conversation" id="Conversation"
+                            value="Conversation">
+                        <label class="form-check-label" for="Conversation">
+                            <a class="text-white" href="https://www.imdb.com/title/tt0071360/"> The Conversation
+                                (1974)
+                            </a>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Great_Riviera" id="Great_Riviera"
+                            value="Great_Riviera">
+                        <label class="form-check-label" for="Great_Riviera">
+                            <a class="text-white" href="https://www.imdb.com/title/tt0079238/"> The Great Riviera
+                                Bank
+                                Robbery (1979) </a>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Absolute_Power" id="Absolute_Power"
+                            value="Absolute_Power">
+                        <label class="form-check-label" for="Absolute_Power">
+                            <a class="text-white" href="https://www.imdb.com/title/tt0118548/"> Absolute Power
+                                (1997)
+                            </a>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Abyss" id="Abyss" value="Abyss">
+                        <label class="form-check-label pb-4" for="Abyss">
+                            <a class="text-white" href="https://www.imdb.com/title/tt0096754/"> The Abyss (1989)
+                            </a>
                         </label>
                     </div>
                     <div class='form-group'>
@@ -335,8 +406,8 @@
                             placeholder="Napišite ukratko nešto o sebi"></textarea>
                     </div>
                     <div class='form-group'>
-                        <label for="citat"> Koji je Vaš omiljeni film? </label>
-                        <input id="film" type="text" placeholder="Vaš omiljeni film" maxlength="30" name="film"
+                        <label for="hobi"> Koji je Vaš hobi? </label>
+                        <input id="hobi" type="text" placeholder="Vaš hobi" maxlength="30" name="hobi"
                             class="form-control">
                     </div>
                     <div class='form-group'>
@@ -381,7 +452,7 @@
         </div>
         <!--desna strafta-->
         <div id="desni_bar" class="col-md-1 d-none d-md-block">
-            <div class="progress" style="height: 1700px">
+            <div class="progress" style="height: 2000px">
                 <div class="progress-bar progress-bar-striped-desni progress-bar-animated-reverse"
                     style="width:100%; background-color: chocolate"></div>
             </div>
