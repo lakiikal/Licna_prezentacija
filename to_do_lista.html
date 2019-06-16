@@ -326,23 +326,23 @@
                         //    dodati(item);
                         //}),
 
-                            $('#form').keydown(function (e) {//postavljamo osluskivac na input polje
-                                var code = e.which;  // da dobijemo kljuc pritisnutog tastera
-                                if (code == 13) { // kada je kod 13, pritisnut je enter
-                                    e.preventDefault();  // da ne bude podrazumevano ponasanje tj da se ne posalje vrednost na server????
-                                    dodati();//pozivamo funkciju
-                                }
-                            });
+                        $('#form').keydown(function (e) {//postavljamo osluskivac na input polje
+                            var code = e.which;  // da dobijemo kljuc pritisnutog tastera
+                            if (code == 13) { // kada je kod 13, pritisnut je enter
+                                e.preventDefault();  // da ne bude podrazumevano ponasanje tj da se ne posalje vrednost na server????
+                                dodati();//pozivamo funkciju
+                            }
+                        });
 
                         $('#dugmeDodajZadatak').on('click', function () {//dohvatamo element nad kojim primenjujemo metod on, kada se klkne poziva se funkcija dodati 
                             dodati();
                         });
 
-                        $(document).on('dblclick', 'li', function () {//....slicno
-                            $(this).toggleClass('strike').fadeOut('slow');
+                        $(document).on('dblclick', '#lista li', function () {//....slicno,...ovde je bilo bitno dohvatiti samo one stavke liste koje su unutar uredjene liste sa id=#lista...
+                            $(this).toggleClass('strike').fadeOut('slow');// ...da ne bi nestale stavke navigacionog bara koje su isto stavke liste
                         });
 
-                        $(document).on('click', 'li', function () {//....slicno
+                        $(document).on('click', '#lista li', function () {//....slicno
                             $(this).toggleClass('strike');
                         });
 
@@ -351,37 +351,37 @@
                         });
 
                         $('#dugmeObrisiSve').on('click', function () {//....
-                            $('li').remove();
+                            $('#lista li').remove();
                         });
 
 
 
                         //function saveListOrder() {
-                           // var $items = $('#lista li');
-                           // $items.each(function (i) {
-                           //     localStorage.setItem(i, $(this).attr('rel'));
-                           // });
+                        // var $items = $('#lista li');
+                        // $items.each(function (i) {
+                        //     localStorage.setItem(i, $(this).attr('rel'));
+                        // });
                         //}
 
                         //function clearListOrder() {
-                            //var $items = $('#lista li');
+                        //var $items = $('#lista li');
 
-                            //$items.each(function (i) {
-                                //alert('Order:' +$(this).attr('rel')+' I: '+i); // This is your rel value
-                                // save the index and the value
-                                //localStorage.clear();
-                                //while (ul.firstChild) {
-                                //ul.removeChild(ul.firstChild);
-                            //}
-                            //});
+                        //$items.each(function (i) {
+                        //alert('Order:' +$(this).attr('rel')+' I: '+i); // This is your rel value
+                        // save the index and the value
+                        //localStorage.clear();
+                        //while (ul.firstChild) {
+                        //ul.removeChild(ul.firstChild);
+                        //}
+                        //});
                         //}
 
                         //$('#snimi').on('click', function () {
-                          //  saveListOrder();
-                       // });
+                        //  saveListOrder();
+                        // });
 
                         //$('#obrisi').on('click', function () {
-                            //clearListOrder();
+                        //clearListOrder();
                         //});
 
 
@@ -409,7 +409,7 @@
                 <!--ovde ce se dinamicki dodavati i skidati stavke liste-->
             </ol>
             <div>
-                <input type="button" id="dugmeObrisiPrecrtane" value="Obriši precrtane stavke" />
+                <input type="button" id="dugmeObrisiPrecrtane" value="Obriši precrtane stavke" style="margin-bottom: 15px"/>
                 <input type="button" id="dugmeObrisiSve" value="Obriši sve stavke" />
                 <!--<input type="button" id="snimi" value="Snimi sve stavke" /> //ovo su bila dugmad za brisanje i snimanje zadataka na lokalnu masinu
                 <input type="button" id="obrisi" value="obrisi" />-->
